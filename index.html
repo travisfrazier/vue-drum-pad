@@ -16,7 +16,6 @@
 			<button class="switch-kit" v-on:click="switchKit">Switch Kit</button>
 			<main class="drums">
 				<app-pad
-					v-bind:isPlaying="pad.isPlaying"
 					v-for="(pad, index) in pads"
 					v-bind:key="pads.id"
 					v-bind:letter="pad.letter"

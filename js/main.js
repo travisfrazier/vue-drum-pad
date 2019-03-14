@@ -8,11 +8,17 @@ Vue.component('app-pad', {
 	inherit: true,
 	methods: {
 		playSound: function(sound) {
-			this.isPlaying = !this.isPlaying;
 			if (sound) {
 				const audio = new Audio(sound);
 				audio.play();
 			}
+			this.addPlaying;
+		}
+	},
+	computed: {
+		addPlaying: function() {
+			this.isPlaying = !this.isPlaying;
+
 			setTimeout(
 				function() {
 					this.isPlaying = !this.isPlaying;
@@ -51,8 +57,7 @@ new Vue({
 				id: 4,
 				dataKey: 70,
 				letter: 'Clap',
-				src: '/kit-one/drum-clap.mp3',
-				isPlaying: false
+				src: '/kit-one/drum-clap.mp3'
 			},
 			{
 				id: 5,
