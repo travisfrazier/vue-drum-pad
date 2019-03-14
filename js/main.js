@@ -84,14 +84,14 @@ new Vue({
 		switchKit: function() {
 			this.count++;
 			const newKit = [
-				'kit-two/drum-kick.mp3',
-				'kit-two/drum-mod.mp3',
-				'kit-two/drum-snare.mp3',
-				'kit-two/drum-clap.mp3',
-				'kit-two/drum-hat.mp3',
-				'kit-two/drum-openh.mp3',
-				'kit-two/drum-crash.mp3',
-				'kit-two/drum-tom.mp3'
+				'kit-two/drum-kick-two.mp3',
+				'kit-two/drum-mod-two.mp3',
+				'kit-two/drum-snare-two.mp3',
+				'kit-two/drum-clap-two.mp3',
+				'kit-two/drum-hat-two.mp3',
+				'kit-two/drum-openh-two.mp3',
+				'kit-two/drum-crash-two.mp3',
+				'kit-two/drum-tom-two.mp3'
 			];
 			if (this.count < 2) {
 				this.pads.forEach(function(pad, i) {
