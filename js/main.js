@@ -39,49 +39,49 @@ new Vue({
 				id: 1,
 				dataKey: 65,
 				letter: 'Kick',
-				src: '/kit-one/drum-kick.mp3'
+				src: 'kit-one/drum-kick.mp3'
 			},
 			{
 				id: 2,
 				dataKey: 83,
 				letter: 'Mod',
-				src: '/kit-one/drum-mod.mp3'
+				src: 'kit-one/drum-mod.mp3'
 			},
 			{
 				id: 3,
 				dataKey: 68,
 				letter: 'Snare',
-				src: '/kit-one/drum-snare.mp3'
+				src: 'kit-one/drum-snare.mp3'
 			},
 			{
 				id: 4,
 				dataKey: 70,
 				letter: 'Clap',
-				src: '/kit-one/drum-clap.mp3'
+				src: 'kit-one/drum-clap.mp3'
 			},
 			{
 				id: 5,
 				dataKey: 90,
 				letter: 'Hat',
-				src: '/kit-one/drum-hat.mp3'
+				src: 'kit-one/drum-hat.mp3'
 			},
 			{
 				id: 6,
 				dataKey: 88,
 				letter: 'Open Hat',
-				src: '/kit-one/drum-openh.mp3'
+				src: 'kit-one/drum-openh.mp3'
 			},
 			{
 				id: 7,
 				dataKey: 67,
 				letter: 'Crash',
-				src: '/kit-one/drum-crash.mp3'
+				src: 'kit-one/drum-crash.mp3'
 			},
 			{
 				id: 8,
 				dataKey: 86,
 				letter: 'Tom',
-				src: '/kit-one/drum-tom.mp3'
+				src: 'kit-one/drum-tom.mp3'
 			}
 		]
 	},
