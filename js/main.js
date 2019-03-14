@@ -33,59 +33,69 @@ new Vue({
 				id: 1,
 				dataKey: 65,
 				letter: 'Kick',
-				src: '/drums/drum-kick.mp3'
+				src: '/kit-one/drum-kick.mp3'
 			},
 			{
 				id: 2,
 				dataKey: 83,
 				letter: 'Mod',
-				src: '/drums/drum-mod.mp3'
+				src: '/kit-one/drum-mod.mp3'
 			},
 			{
 				id: 3,
 				dataKey: 68,
 				letter: 'Snare',
-				src: '/drums/drum-snare.mp3'
+				src: '/kit-one/drum-snare.mp3'
 			},
 			{
 				id: 4,
 				dataKey: 70,
 				letter: 'Clap',
-				src: '/drums/drum-clap.mp3',
+				src: '/kit-one/drum-clap.mp3',
 				isPlaying: false
 			},
 			{
 				id: 5,
 				dataKey: 90,
 				letter: 'Hat',
-				src: '/drums/drum-hat.mp3'
+				src: '/kit-one/drum-hat.mp3'
 			},
 			{
 				id: 6,
 				dataKey: 88,
 				letter: 'Open Hat',
-				src: '/drums/drum-openh.mp3'
+				src: '/kit-one/drum-openh.mp3'
 			},
 			{
 				id: 7,
 				dataKey: 67,
 				letter: 'Crash',
-				src: '/drums/drum-crash.mp3'
+				src: '/kit-one/drum-crash.mp3'
 			},
 			{
 				id: 8,
 				dataKey: 86,
 				letter: 'Tom',
-				src: '/drums/drum-tom.mp3'
+				src: '/kit-one/drum-tom.mp3'
 			}
 		]
 	},
 	methods: {
 		switchKit: function() {
 			this.count++;
+			const newKit = [
+				'kit-two/drum-kick.mp3',
+				'kit-two/drum-mod.mp3',
+				'kit-two/drum-snare.mp3',
+				'kit-two/drum-clap',
+				'kit-two/drum-hat',
+				'kit-two/drum-openh.mp3',
+				'kit-two/drum-crash.mp3',
+				'kit-two/drum-tom.mp3'
+			];
 			if (this.count < 2) {
-				this.pads.forEach(function(pad) {
-					return (pad.src = 'kit-two' + pad.src);
+				this.pads.forEach(function(pad, i) {
+					return (pad.src = newKit[i]);
 				});
 			} else {
 				location.reload();
