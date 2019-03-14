@@ -87,8 +87,8 @@ new Vue({
 				'kit-two/drum-kick.mp3',
 				'kit-two/drum-mod.mp3',
 				'kit-two/drum-snare.mp3',
-				'kit-two/drum-clap',
-				'kit-two/drum-hat',
+				'kit-two/drum-clap.mp3',
+				'kit-two/drum-hat.mp3',
 				'kit-two/drum-openh.mp3',
 				'kit-two/drum-crash.mp3',
 				'kit-two/drum-tom.mp3'
