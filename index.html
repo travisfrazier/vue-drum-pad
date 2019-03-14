@@ -7,13 +7,22 @@
 			href="https://fonts.googleapis.com/css?family=Shrikhand"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Monoton"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" type="text/css" href="./main.css" />
 		<title>Drums</title>
 	</head>
 	<body>
 		<div id="app">
 			<h1>{{ title }}</h1>
-			<button class="switch-kit" v-on:click="switchKit">Switch Kit</button>
+			<div class="screen-container">
+				<div class="screen">
+					{{ drumType }}
+				</div>
+				<button class="switch-kit" v-on:click="switchKit">Switch Kit</button>
+			</div>
 			<main class="drums">
 				<app-pad
 					v-for="(pad, index) in pads"

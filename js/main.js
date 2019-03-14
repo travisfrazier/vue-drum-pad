@@ -32,7 +32,8 @@ Vue.component('app-pad', {
 new Vue({
 	el: '#app',
 	data: {
-		title: 'Drum Pad Bro',
+		title: 'MPC Drum Machine',
+		drumType: 'EDM-Kit',
 		count: 0,
 		pads: [
 			{
@@ -102,6 +103,7 @@ new Vue({
 				this.pads.forEach(function(pad, i) {
 					return (pad.src = newKit[i]);
 				});
+				this.drumType = '808-SD';
 			} else {
 				location.reload();
 			}
