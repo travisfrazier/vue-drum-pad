@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Shrikhand"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="./main.css" />
+		<title>Drums</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>{{ title }}</h1>
+			<button class="switch-kit" v-on:click="switchKit">Switch Kit</button>
+			<main class="drums">
+				<app-pad
+					v-bind:isPlaying="pad.isPlaying"
+					v-for="(pad, index) in pads"
+					v-bind:key="pads.id"
+					v-bind:letter="pad.letter"
+					v-bind:dataKey="pad.dataKey"
+					v-bind:src="pad.src"
+				></app-pad>
+			</main>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+html {
+  background-color: #252627;
+}
+
+body {
+  margin-top: 15rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+  color: #f0dbc3;
+  text-align: center;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  grid-gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #3c3d3f;
+  -webkit-box-shadow: 15px 15px 85px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 15px 15px 85px 0px rgba(0, 0, 0, 0.75);
+}
+
+main button:focus {
+  outline: 0;
+}
+
+main button {
+  width: 125px;
+  height: 125px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+main button kbd {
+  padding: 1px 0 0 4px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.playing {
+  background-color: #f1b87b !important;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 3rem;
+  }
+  body main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.switch-kit {
+  width: 8rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  border: none;
+  font-family: 'Shrikhand', cursive;
+}
+/*# sourceMappingURL=main.css.map */

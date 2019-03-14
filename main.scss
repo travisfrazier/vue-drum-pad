@@ -1,0 +1,73 @@
+html {
+	background-color: #252627;
+}
+
+body {
+	margin-top: 15rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+	color: #f0dbc3;
+	text-align: center;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 20px;
+	grid-gap: 1.5rem;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+	background-color: #3c3d3f;
+	box-shadow: 15px 15px 85px 0px rgba(0, 0, 0, 0.75);
+	button:focus {
+		outline: 0;
+	}
+	button {
+		width: 125px;
+		height: 125px;
+		background-color: #f0f0f0;
+		cursor: pointer;
+		kbd {
+			padding: 1px 0 0 4px;
+			font-family: 'Shrikhand', cursive;
+		}
+	}
+}
+
+.playing {
+	background-color: #f1b87b !important;
+	transform: scale(1.03);
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin-top: 3rem;
+		main {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1rem;
+		}
+	}
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	touch-action: manipulation;
+}
+.switch-kit {
+	width: 8rem;
+	margin-bottom: 1rem;
+	padding: 0.25rem;
+	border: none;
+	font-family: 'Shrikhand', cursive;
+}
